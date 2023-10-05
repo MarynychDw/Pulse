@@ -10,7 +10,18 @@
         &__descr
             width: 250px
             font-size: 13px
-    
+    .carousel
+        padding: 81px 0 20px 0
+        &__inner
+            img
+                width: 75%
+                margin: 0 auto
+        .slick-prev
+            left: 33px
+            z-index: 2
+        .slick-next 
+            right: 33px
+            z-index: 2
 @media ( max-width:767px )
     .container
         width: 576px
@@ -39,7 +50,18 @@
     .consultation
         &__descr
             text-align: center
-
+    .carousel
+        padding: 40px 0 60px 0
+        &__inner
+            width: 500px
+    .catalog
+        &__tabs
+            margin-top: 40px
+        &__tab
+            width: 120px
+            height: 35px
+            font-size: 11px
+            line-height: 35px
 @media ( max-width:575px )
     .container
         width: 320px
@@ -69,4 +91,15 @@
         min-height: 380px
         &__descr
             font-size: 13px
+    .carousel
+        display: none
+    .catalog
+        padding-top: 60px
+        &__tab
+            width: 90px
+            height: 30px
+            font-size: 9px
+            line-height: 30px
+
+    
     
