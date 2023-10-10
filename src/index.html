@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -61,7 +62,7 @@
                     <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__item">
-                    <div class="advantages__img"><img src="icons/advantages/heart.png" alt="heart"></div>
+                    <div class="advantages__img"><img src="icons/advantages/heart.png" alt="heart" class="advantages__img_animated"></div>
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
@@ -414,7 +415,7 @@
         <div class="container">
             <div class="title">отзывы клиентов</div>
         <div class="review__wrapper">
-            <div class="review__item">
+            <div class="review__item animate__fadeInUp wow">
                 <img src="img/review/photo_1.png" alt="photo" class="review__img">
                 <div class="review__item__wrapper">
                     <div class="review__name">Ирина Иванченко </div>
@@ -423,7 +424,7 @@
                         <br><br>Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="review__item">
+            <div class="review__item animate__fadeInUp wow">
                 <img src="img/review/photo_2.png" alt="photo" class="review__img">
                 <div class="review__item__wrapper">
                     <div class="review__name">Иван Сёмочкин</div>
@@ -431,7 +432,7 @@
                     <div class="review__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                     </div>
             </div>
-            <div class="review__item">
+            <div class="review__item animate__fadeInUp wow">
                 <img src="img/review/photo_3.png" alt="photophoto" class="review__img">
                 <div class="review__item__wrapper">
                     <div class="review__name">Юлия Дашкина</div>
@@ -498,6 +499,8 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup"><img src="icons/pageup.svg" alt="pageup" ></a>
+
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -505,6 +508,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
